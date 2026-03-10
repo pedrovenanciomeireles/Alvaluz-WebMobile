@@ -1,5 +1,5 @@
 # lagartaWebmobile
-**Pedro Henrique Venancio Meireles 10747973 - Brenner da Silva Costa 10754397**
+**Pedro Henrique Venancio Meireles 10747973 - Brenner da Silva Costa 10754397 - Giovanni Manchi Sodré 10753281 - Leonardo Guedes Serra Santana 10738007**
 ### Uma explicação inicial sobre o processo de ideação.
   O processo de ideação do nosso projeto teve como objetivo principal desenvolver uma solução voltada para a comunidade, que fosse prática, funcional e possível de implementar dentro do prazo proposto. Durante a discussão inicial, o grupo considerou duas ideias principais.\
   A primeira proposta era a criação de um site para divulgar os serviços de instalação e manutenção realizados pelo pai de um dos integrantes, como instalação de televisores, cabeamento residencial, antenas e internet. A ideia era ajudar na divulgação do trabalho e facilitar o contato com possíveis clientes.\
