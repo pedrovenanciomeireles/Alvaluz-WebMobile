@@ -1,10 +1,10 @@
-# 🕯️ Projeto Alvaluz
+# Projeto Alvaluz
 
 Projeto de um site institucional/e-commerce para uma loja de velas chamado **Alvaluz**, desenvolvido com **HTML, CSS e JavaScript**.
 
 ---
 
-## 📁 Estrutura do Projeto
+## Estrutura do Projeto
 
 ```bash
 📦 alvaluz
@@ -23,7 +23,7 @@ O arquivo `index.html` define toda a estrutura do site.
 
 ---
 
-## 🔝 Header
+## Header
 
 ### `#headerNav`
 
@@ -40,7 +40,7 @@ O arquivo `index.html` define toda a estrutura do site.
 
 ---
 
-## 📂 Aside (Menu Lateral)
+## Aside (Menu Lateral)
 
 * Menu oculto inicialmente
 * Abre ao clicar no botão ☰
@@ -52,7 +52,7 @@ O arquivo `index.html` define toda a estrutura do site.
 
 ---
 
-## 📂 Submenu "Velas"
+## Submenu "Velas"
 
 Categorias:
 
@@ -62,7 +62,7 @@ Categorias:
 
 ---
 
-## 🖼️ Banner
+## Banner
 
 Imagem principal do site:
 
@@ -74,7 +74,7 @@ Imagem principal do site:
 
 ---
 
-## 🗂️ Outras Seções
+## Outras Seções
 
 * `#categorias` → futuras categorias
 * `#carrosel` → futuro slider
@@ -82,7 +82,7 @@ Imagem principal do site:
 
 ---
 
-## 🔻 Footer
+## Footer
 
 * Contatos
 * Redes sociais
@@ -95,7 +95,7 @@ Arquivo: `style.css`
 
 ---
 
-## 🔹 Reset Global
+## Reset Global
 
 ```css
 * {
@@ -107,7 +107,7 @@ Arquivo: `style.css`
 
 ---
 
-## 🔹 Header com Gradiente
+## Header com Gradiente
 
 ```css
 header {
@@ -119,7 +119,7 @@ header {
 
 ---
 
-## 🔹 Layout com Flexbox
+## Layout com Flexbox
 
 ```css
 #headerNav {
@@ -131,7 +131,7 @@ header {
 
 ---
 
-## 🔹 Campo de Busca
+## Campo de Busca
 
 ```css
 input {
@@ -143,7 +143,7 @@ input {
 
 ---
 
-## 🔹 Menu Lateral
+## Menu Lateral
 
 ```css
 aside {
@@ -158,7 +158,7 @@ aside.ativo {
 
 ---
 
-## 🔹 Submenu Animado
+## Submenu Animado
 
 ```css
 #catalogoToggle {
@@ -173,7 +173,7 @@ aside.ativo {
 
 ---
 
-## 🔹 Efeitos Hover
+## Efeitos Hover
 
 ```css
 .headerLink:hover,
@@ -184,9 +184,9 @@ aside.ativo {
 
 ---
 
-## 🔹 Ícones
+## Ícones
 
-* Biblioteca: **Flaticon**
+* Biblioteca: Flaticon
 
 ```css
 .icon {
@@ -196,7 +196,7 @@ aside.ativo {
 
 ---
 
-## 🔹 Animação do Ícone
+## Animação do Ícone
 
 ```css
 #iconeVelas.ativo {
@@ -212,7 +212,7 @@ Arquivo: `script.js`
 
 ---
 
-## 🔹 Inicialização
+## Inicialização
 
 ```js
 document.addEventListener("DOMContentLoaded", function () {
@@ -222,7 +222,7 @@ Garante que o DOM esteja carregado antes de executar.
 
 ---
 
-## 🔹 Seleção de Elementos
+## Seleção de Elementos
 
 ```js
 const item = document.getElementById("itemCatalogo");
@@ -236,7 +236,7 @@ const botaoFecharAside = document.getElementById("botaoFecharAside");
 
 ---
 
-## 🔹 Toggle do Submenu
+## Toggle do Submenu
 
 ```js
 item.addEventListener("click", function (e) {
@@ -252,7 +252,7 @@ item.addEventListener("click", function (e) {
 });
 ```
 
-### ✔ O que faz:
+### O que faz:
 
 * Abre/fecha o submenu
 * Anima altura dinamicamente
@@ -260,7 +260,7 @@ item.addEventListener("click", function (e) {
 
 ---
 
-## 🔹 Abrir Menu Lateral
+## Abrir Menu Lateral
 
 ```js
 botaoAside.addEventListener("click", function () {
@@ -270,7 +270,7 @@ botaoAside.addEventListener("click", function () {
 
 ---
 
-## 🔹 Fechar Menu Lateral
+## Fechar Menu Lateral
 
 ```js
 botaoFecharAside.addEventListener("click", function () {
@@ -280,17 +280,17 @@ botaoFecharAside.addEventListener("click", function () {
 
 ---
 
-# 🎯 Funcionalidades
+# Funcionalidades
 
-✅ Menu lateral animado
-✅ Submenu expansível
-✅ Rotação de ícone
-✅ Layout moderno
-✅ Estrutura pronta para e-commerce
+* Menu lateral animado
+* Submenu expansível
+* Rotação de ícone
+* Layout moderno
+* Estrutura pronta para e-commerce
 
 ---
 
-# 💡 Fluxo de Uso
+# Fluxo de Uso
 
 | Ação              | Resultado         |
 | ----------------- | ----------------- |
@@ -301,17 +301,17 @@ botaoFecharAside.addEventListener("click", function () {
 
 ---
 
-# 🔮 Melhorias Futuras
+# Melhorias Futuras
 
-* Responsividade mobile 📱
-* Carrossel funcional 🎞️
-* Sistema de busca 🔎
+* Responsividade mobile
+* Carrossel funcional
+* Sistema de busca
 * Backend (produtos reais)
-* Carrinho de compras 🛒
+* Carrinho de compras
 
 ---
 
-# 📚 Tecnologias Utilizadas
+# Tecnologias Utilizadas
 
 * HTML5
 * CSS3
@@ -320,6 +320,6 @@ botaoFecharAside.addEventListener("click", function () {
 
 ---
 
-# 🧑‍💻 Autores
+# Autores
 
 Desenvolvido por Pedro Henrique Venancio Meireles 10747973, Brenner da Silva Costa 10754397, Giovanni Manchi Sodré 10753281, Leonardo Guedes Serra Santana 10738007.
