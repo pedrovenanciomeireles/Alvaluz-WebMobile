@@ -1,185 +1,325 @@
-Tutorial — Estrutura HTML + CSS (Projeto Alvaluz)
+# 🕯️ Projeto Alvaluz
 
-Este documento explica a estrutura e estilização do projeto Alvaluz, detalhando cada parte do HTML e CSS.
+Projeto de um site institucional/e-commerce para uma loja de velas chamado **Alvaluz**, desenvolvido com **HTML, CSS e JavaScript**.
 
-HTML — Estrutura da Página
-Cabeçalho (<header>)
+---
 
-O header é dividido em duas seções principais:
+## 📁 Estrutura do Projeto
 
-1. Navegação principal (#headerNav)
+```bash
+📦 alvaluz
+ ┣ 📜 index.html
+ ┣ 📜 style.css
+ ┣ 📜 script.js
+ ┣ 🖼️ logo.png
+ ┣ 🖼️ fabrica.webp
+```
 
-Responsável por exibir:
+---
 
-Ícone de menu (hambúrguer)
+# 🧱 1. HTML (Estrutura)
 
-Logo da empresa
+O arquivo `index.html` define toda a estrutura do site.
 
-Campo de busca
+---
 
-Ícones de carrinho e usuário
+## 🔝 Header
 
-Exemplo:
+### `#headerNav`
 
-<section id="headerNav">
+* Botão menu (☰)
+* Logo
+* Campo de busca
+* Ícones (carrinho + usuário)
 
-Campo de busca:
+### `#headerLinks`
 
-<input type="search" placeholder="Buscar Produtos">
-2. Links principais (#headerLinks)
+* Home
+* Catálogo
+* Contato (WhatsApp)
 
-Contém os links de navegação:
+---
 
-Home
+## 📂 Aside (Menu Lateral)
 
-Catálogo
+* Menu oculto inicialmente
+* Abre ao clicar no botão ☰
+* Contém:
 
-Contato
+  * Home
+  * Velas (submenu)
+  * Contato
 
-<section id="headerLinks">
-Menu lateral (<aside>)
+---
 
-Estrutura pensada para navegação lateral (principalmente mobile).
+## 📂 Submenu "Velas"
 
-Contém:
+Categorias:
 
-Cabeçalho com botão de fechar
+* Clássicas
+* Aromatizantes
+* Religiosas
 
-Lista de links
+---
 
-Submenu de catálogo
+## 🖼️ Banner
 
-<section id="catalogoToggle">
+Imagem principal do site:
 
-O submenu pode futuramente ser controlado com JavaScript.
+```html
+<section id="banner">
+  <img src="fabrica.webp">
+</section>
+```
 
-Seções principais
+---
 
-Espaços reservados para conteúdo:
+## 🗂️ Outras Seções
 
-<section id="banner"></section>
-<section id="categorias"></section>
-<section id="carrosel"></section>
-<section id="sobre"></section>
+* `#categorias` → futuras categorias
+* `#carrosel` → futuro slider
+* `#sobre` → produtos ou informações
 
-Função de cada seção:
+---
 
-Banner: destaque principal
+## 🔻 Footer
 
-Categorias: organização de produtos
+* Contatos
+* Redes sociais
 
-Carrossel: produtos em destaque
+---
 
-Sobre: informações da empresa
+# 🎨 2. CSS (Estilização)
 
-Rodapé (<footer>)
+Arquivo: `style.css`
 
-Ainda não implementado. Pode conter:
+---
 
-Informações da empresa
+## 🔹 Reset Global
 
-Contato
-
-Redes sociais
-
-CSS — Estilização
-Reset global
+```css
 * {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
 }
+```
 
-Remove estilos padrão do navegador.
+---
 
-Layout do Header
-#headerNav
+## 🔹 Header com Gradiente
+
+```css
+header {
+  background: radial-gradient(circle,
+    rgba(187, 216, 237, 1) 0%,
+    rgba(131, 205, 235, 1) 100%);
+}
+```
+
+---
+
+## 🔹 Layout com Flexbox
+
+```css
 #headerNav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
+```
 
-Utiliza Flexbox para alinhar os elementos.
+---
 
-Fundo com gradiente:
+## 🔹 Campo de Busca
 
-background: radial-gradient(circle, rgba(187,216,237,1) 0%, rgba(131,205,235,1) 100%);
-#headerLinks
-#headerLinks {
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-}
-
-Centraliza os links com espaçamento entre eles.
-
-Campo de busca
+```css
 input {
-    width: 31rem;
-    height: 1.5rem;
-    padding: 1rem;
-    border-radius: 10px;
-    border: none;
+  width: 31rem;
+  border-radius: 10px;
+  border: none;
 }
-input:focus {
-    outline: none;
-}
+```
 
-Remove o contorno ao clicar.
+---
 
-Links
-.headerLink {
-    text-decoration: none;
-    color: #222;
+## 🔹 Menu Lateral
+
+```css
+aside {
+  transform: translateX(-100%);
+  transition: transform 0.3s ease;
 }
 
-Sem sublinhado.
-
-Hover:
-
-.headerLink:hover {
-    color: #fff;
-    transition: 0.1s;
+aside.ativo {
+  transform: translateX(0);
 }
-Imagens
-Logo
-#logo {
-    width: 5%;
+```
+
+---
+
+## 🔹 Submenu Animado
+
+```css
+#catalogoToggle {
+  max-height: 0;
+  overflow: hidden;
 }
-Ícones
+
+#catalogoToggle.ativo {
+  max-height: 300px;
+}
+```
+
+---
+
+## 🔹 Efeitos Hover
+
+```css
+.headerLink:hover,
+.icon:hover {
+  color: #fff;
+}
+```
+
+---
+
+## 🔹 Ícones
+
+* Biblioteca: **Flaticon**
+
+```css
 .icon {
-    width: 1.4rem;
-    padding: 0.2rem;
+  font-size: 1.3rem;
 }
-Melhorias sugeridas
-Responsividade
-@media (max-width: 768px) {
-    input {
-        width: 100%;
-    }
+```
+
+---
+
+## 🔹 Animação do Ícone
+
+```css
+#iconeVelas.ativo {
+  transform: rotate(90deg);
 }
-Interatividade
+```
 
-Adicionar JavaScript para:
+---
 
-Abrir/fechar menu lateral
+# ⚙️ 3. JavaScript (Interatividade)
 
-Controlar submenu
+Arquivo: `script.js`
 
-Carrossel
+---
 
-Implementar com:
+## 🔹 Inicialização
 
-Biblioteca (ex: Swiper.js)
+```js
+document.addEventListener("DOMContentLoaded", function () {
+```
 
-Ou JavaScript puro
+Garante que o DOM esteja carregado antes de executar.
 
-Organização do CSS
+---
 
-Separar por seções:
+## 🔹 Seleção de Elementos
 
-/* HEADER */
-/* ASIDE */
-/* MAIN */
-/* FOOTER */
+```js
+const item = document.getElementById("itemCatalogo");
+const menu = document.getElementById("catalogoToggle");
+const icone = document.getElementById("iconeVelas");
+
+const aside = document.querySelector("aside");
+const botaoAside = document.getElementById("botaoAside");
+const botaoFecharAside = document.getElementById("botaoFecharAside");
+```
+
+---
+
+## 🔹 Toggle do Submenu
+
+```js
+item.addEventListener("click", function (e) {
+  e.preventDefault();
+
+  if (menu.style.maxHeight && menu.style.maxHeight !== "0px") {
+    menu.style.maxHeight = "0px";
+    icone.classList.remove("ativo");
+  } else {
+    menu.style.maxHeight = menu.scrollHeight + "px";
+    icone.classList.add("ativo");
+  }
+});
+```
+
+### ✔ O que faz:
+
+* Abre/fecha o submenu
+* Anima altura dinamicamente
+* Rotaciona o ícone
+
+---
+
+## 🔹 Abrir Menu Lateral
+
+```js
+botaoAside.addEventListener("click", function () {
+  aside.classList.add("ativo");
+});
+```
+
+---
+
+## 🔹 Fechar Menu Lateral
+
+```js
+botaoFecharAside.addEventListener("click", function () {
+  aside.classList.remove("ativo");
+});
+```
+
+---
+
+# 🎯 Funcionalidades
+
+✅ Menu lateral animado
+✅ Submenu expansível
+✅ Rotação de ícone
+✅ Layout moderno
+✅ Estrutura pronta para e-commerce
+
+---
+
+# 💡 Fluxo de Uso
+
+| Ação              | Resultado         |
+| ----------------- | ----------------- |
+| Clique no ☰       | Abre menu lateral |
+| Clique no ❌       | Fecha menu        |
+| Clique em "Velas" | Abre submenu      |
+| Clique novamente  | Fecha submenu     |
+
+---
+
+# 🔮 Melhorias Futuras
+
+* Responsividade mobile 📱
+* Carrossel funcional 🎞️
+* Sistema de busca 🔎
+* Backend (produtos reais)
+* Carrinho de compras 🛒
+
+---
+
+# 📚 Tecnologias Utilizadas
+
+* HTML5
+* CSS3
+* JavaScript
+* Flaticon Icons
+
+---
+
+# 🧑‍💻 Autores
+
+Desenvolvido por Pedro Henrique Venancio Meireles 10747973, Brenner da Silva Costa 10754397, Giovanni Manchi Sodré 10753281, Leonardo Guedes Serra Santana 10738007.
