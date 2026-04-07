@@ -1,0 +1,93 @@
+.carrosselContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.carrosselProdutos {
+    width: 100%;
+    max-width: 1100px;
+    padding: 20px;
+}
+
+.tituloCarrossel {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 30px;
+    font-family: Arial;
+}
+
+.wrapCarrossel {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.containerCarrossel {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+    padding: 10px;
+}
+
+.containerCarrossel::-webkit-scrollbar {
+    display: none;
+}
+
+.cardProduto {
+    flex: 0 0 calc(33.333% - 20px);
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+    scroll-snap-align: start;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.cardProduto:hover {
+    transform: translateY(-5px);
+}
+
+.imagemProduto {
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+}
+
+.nomeProduto {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.avaliacaoProduto {
+    color: orange;
+}
+
+.precoAtual {
+    color: green;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.setaCarrossel {
+    font-size: 40px;
+    background: rgba(255,255,255,0.8);
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+}
+
+@media (max-width: 900px) {
+    .cardProduto {
+        flex: 0 0 80%;
+    }
+}
+@media (max-width: 900px) {
+    .cardProduto {
+        flex: 0 0 80%;
+    }
+}

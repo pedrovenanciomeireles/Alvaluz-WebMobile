@@ -1,0 +1,126 @@
+.carrosselContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    width: 100%;
+}
+
+.carrosselProdutos {
+    width: 100%;
+    max-width: 1100px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.tituloCarrossel {
+    text-align: center;
+    font-size: 28px;
+    color: #1A1A1A;
+    margin-bottom: 30px;
+    font-weight: normal;
+    font-family: "Inter", sans-serif;
+}
+
+.wrapCarrossel {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.containerCarrossel {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    padding: 10px;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.containerCarrossel::-webkit-scrollbar {
+    display: none;
+}
+
+.cardProduto {
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    flex: 0 0 300px;
+    border: 1px solid #e0e0e0;
+}
+
+.imagemProduto {
+    max-width: 100%;
+    height: 220px;
+    object-fit: contain;
+    margin-bottom: 15px;
+}
+
+.nomeProduto {
+    font-size: 18px;
+    color: #333;
+    margin: 10px 0;
+    font-weight: 600;
+}
+
+.avaliacaoProduto {
+    color: #f8b400;
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+.avaliacaoProduto span:last-child {
+    color: #d1d1d1;
+}
+
+.precoProduto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.precoAtual {
+    color: #388e3c;
+    font-size: 26px;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+.setaCarrossel {
+    background-color: transparent;
+    border: none;
+    font-size: 40px;
+    color: #888;
+    cursor: pointer;
+    z-index: 10;
+    padding: 0 20px;
+}
+
+.setaCarrossel:hover {
+    color: #333;
+}
+
+.centroPagina {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.centroPagina .containerCarrossel {
+    gap: 30px;
+    overflow: visible;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.centroPagina .tituloCarrossel {
+    text-align: center;
+}

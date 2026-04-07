@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clássicas — Alvaluz</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="carrosel.css">
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/4.0.0/uicons-bold-rounded/css/uicons-bold-rounded.css'>
+    <script src="script.js"></script>
+</head>
+<body>
+    <header>
+        <section id="cabecalhoNav">
+            <a id="botaoAside" class="icone" href="#"><i class="fi fi-br-menu-burger"></i></a>
+
+            <img id="logo" src="logo.png" alt="logoAlvaluz">
+
+            <input type="search" placeholder="Buscar Produtos">
+
+            <section id="login">
+                <a class="icone" href="carrinho.html"><i class="fi fi-rr-shopping-cart"></i></a>
+                <a class="icone" href="login.html"><i class="fi fi-sr-user"></i></a>
+            </section>
+        </section>  
+
+        <section id="linksCabecalho">
+            <a class="linkCabecalho" href="index.html">Home</a>
+            <a class="linkCabecalho" href="catalogo.html">Catálogo</a>
+            <a class="linkCabecalho" href="https://w.app/c1rtqx" target="_blank" rel="noopener noreferrer">Contato</a>
+        </section>
+    </header>
+
+    <aside>
+        <section id="cabecalhoAside">
+            <img id="logoAside" src="logo.png" alt="logoAlvaluz">
+            <i id="botaoFecharAside" class="fi fi-br-cross"></i>
+        </section>
+
+        <section id="linksAside">
+            <ul>
+                <li>
+                    <a class="linkAside" href="index.html">Home</a>
+                </li>
+
+                <li id="itemCatalogo">
+                    <a class="linkAside" href="#">Velas</a>
+                    <i id="iconeVelas" class="fi fi-rr-angle-small-right"></i>
+                </li>
+                <section id="catalogoToggle" class="hidden">
+                    <ul>
+                        <li id="linkCatalogo">
+                            <a class="linkAside" href="classicas.html">Clássicas</a>
+                        </li>
+
+                        <li id="linkCatalogo">
+                            <a class="linkAside" href="aromatizantes.html">Aromatizantes</a>
+                        </li>
+
+                        <li id="linkCatalogo">
+                            <a class="linkAside" href="religiosas.html">Religiosas</a>
+                        </li>
+                    </ul>
+                </section>
+
+                <li>
+                    <a class="linkAside" href="https://w.app/c1rtqx" target="_blank" rel="noopener noreferrer">Contato</a>
+                </li>
+            </ul>
+        </section>
+    </aside>
+
+    <section class="centroPagina">
+        <main>
+            <h1 class="tituloCarrossel" style="margin-bottom:20px;">Velas Clássicas</h1>
+            <section class="containerCarrossel">
+                <section class="cardProduto" style="flex:0 0 320px;">
+                    <img src="velabranca.jpg" alt="Vela 7 Dias" class="imagemProduto">
+                    <h3 class="nomeProduto">Vela Branca</h3>
+                    <section class="avaliacaoProduto">
+                        <span>★</span><span>★</span><span>★</span><span>★</span><span>☆</span>
+                    </section>
+                    <section class="precoProduto">
+                        <span class="precoAtual">R$ 19,90</span>
+                    </section>
+                </section>
+            </section>
+        </main>
+    </section>
+
+    <footer>
+        <section class="conteudoFooter">
+            <section class="colunaFooter sobreLogo">
+                <img src="logo.png" alt="Logo Alvaluz" class="logoFooter">
+                <p>Iluminando seus momentos com aromas, paz e tranquilidade. Velas artesanais feitas com amor.</p>
+            </section>
+
+            <section class="colunaFooter">
+                <h3>Links Úteis</h3>
+                <a href="index.html" class="linkFooter">Home</a>
+                <a href="catalogo.html" class="linkFooter">Catálogo de Velas</a>
+            </section>
+
+            <section class="colunaFooter">
+                <h3>Atendimento</h3>
+                <p class="infoContato"><i class="fi fi-rr-envelope"></i> contato@alvaluz.com.br</p>
+                <p class="infoContato"><i class="fi fi-brands-whatsapp"></i> (11) 99999-9999</p>
+                <p class="infoContato"><i class="fi fi-rr-clock"></i> Seg a Sex: 09h às 18h</p>
+            </section>
+
+        </section>
+
+        <section class="direitosAutorais">
+            <p>&copy; 2026 Alvaluz. Todos os direitos reservados.</p>
+        </section>
+    </footer>
+</body>
+</html>

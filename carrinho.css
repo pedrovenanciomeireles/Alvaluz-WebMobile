@@ -1,0 +1,174 @@
+/* Layout Principal do Carrinho */
+#containerCarrinho {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    padding: 3rem 7rem;
+    min-height: 60vh;
+}
+
+/* Lista de Produtos */
+.listaProdutos {
+    flex: 2;
+    background-color: #fff;
+}
+
+.listaProdutos h2 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 2rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #eee;
+}
+
+.itemCarrinho {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 0;
+    border-bottom: 1px solid #eee;
+}
+
+.imgItem {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.infoItem {
+    flex: 1;
+    margin-left: 1.5rem;
+}
+
+.infoItem h3 {
+    font-size: 1.2rem;
+    color: #222;
+    margin-bottom: 0.3rem;
+}
+
+.infoItem p {
+    font-size: 0.9rem;
+    color: #777;
+}
+
+.acoesItem {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.qtdItem {
+    width: 50px;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.precoItem {
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: #333;
+    width: 80px;
+    text-align: right;
+}
+
+.btnRemover {
+    background: none;
+    border: none;
+    color: #cc0000;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.btnRemover:hover {
+    color: #ff3333;
+}
+
+/* Resumo do Pedido Lateral */
+.resumoPedido {
+    flex: 1;
+    background-color: #f9f9f9;
+    padding: 2rem;
+    border-radius: 10px;
+    height: fit-content;
+    border: 1px solid #eee;
+    /* Sobrescrevendo o position fixed do aside global apenas para esta classe */
+    position: static;
+    transform: none;
+    width: auto;
+}
+
+.resumoPedido h2 {
+    font-size: 1.4rem;
+    color: #333;
+    margin-bottom: 1.5rem;
+}
+
+.linhaResumo {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    color: #555;
+    font-size: 1rem;
+}
+
+.resumoPedido hr {
+    border: 0;
+    border-top: 1px solid #ddd;
+    margin: 1.5rem 0;
+}
+
+.linhaResumo.total {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #222;
+}
+
+/* Botões de Ação */
+.btnFinalizar {
+    width: 100%;
+    padding: 1rem;
+    background-color: rgb(38, 98, 141); /* Mesma cor do seu menu lateral */
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 1.5rem;
+    transition: background-color 0.3s;
+}
+
+.btnFinalizar:hover {
+    background-color: rgba(38, 98, 141, 0.8);
+}
+
+.btnContinuar {
+    display: block;
+    text-align: center;
+    margin-top: 1rem;
+    color: rgb(38, 98, 141);
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.btnContinuar:hover {
+    text-decoration: underline;
+}
+
+/* Responsividade Básica para o Carrinho */
+@media (max-width: 900px) {
+    #containerCarrinho {
+        flex-direction: column;
+        padding: 2rem 2rem;
+    }
+    
+    .acoesItem {
+        flex-direction: column;
+        gap: 0.5rem;
+        align-items: flex-end;
+    }
+}

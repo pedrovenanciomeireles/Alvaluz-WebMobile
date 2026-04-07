@@ -1,0 +1,199 @@
+/* =========================================
+   PÁGINA DE LOGIN
+   ========================================= */
+
+/* Container que centraliza o formulário na tela */
+#containerLogin {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 70vh; /* Ocupa uma boa altura da tela entre o header e o footer */
+    background-color: #f4f7f6; /* Fundo levemente cinza para destacar o cartão branco */
+    padding: 3rem 1rem;
+}
+
+/* O cartão branco do formulário */
+.cardLogin {
+    background-color: #fff;
+    padding: 3rem 2.5rem;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08); /* Sombra suave */
+    width: 100%;
+    max-width: 420px;
+}
+
+/* Logo dentro do cartão */
+.logoLogin {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.logoLogin img {
+    width: 80px;
+    /* Se a sua logo for branca e sumir no fundo branco do cartão, 
+       descomente a linha abaixo para deixá-la escura: */
+    /* filter: brightness(0); */
+}
+
+/* Títulos e textos do cartão */
+.cardLogin h2 {
+    color: rgb(38, 98, 141); /* Azul padrão da Alvaluz */
+    font-size: 1.6rem;
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+
+.cardLogin p {
+    color: #777;
+    font-size: 0.95rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+/* Estrutura do Formulário */
+#formLogin {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem; /* Espaçamento uniforme entre os campos */
+}
+
+.grupoInput label {
+    display: block;
+    font-size: 0.9rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+/* Campos de input com ícones embutidos */
+.inputComIcone {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.inputComIcone i {
+    position: absolute;
+    left: 15px;
+    color: #888;
+    font-size: 1.1rem;
+}
+
+/* Ajustes no input para dar espaço ao ícone */
+.inputComIcone input {
+    width: 100%;
+    padding: 0.9rem 1rem 0.9rem 2.8rem; /* O 2.8rem à esquerda evita que o texto fique em cima do ícone */
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    background-color: #fbfbfb;
+    transition: all 0.3s ease;
+    height: auto; 
+    box-sizing: border-box; /* Garante que o padding não quebre a largura */
+}
+
+.inputComIcone input:focus {
+    border-color: rgb(38, 98, 141);
+    background-color: #fff;
+    box-shadow: 0 0 0 3px rgba(38, 98, 141, 0.1); /* Brilho ao redor quando clicado */
+    outline: none;
+}
+
+/* Links secundários */
+.linkEsqueceuSenha {
+    display: block;
+    text-align: right;
+    font-size: 0.85rem;
+    color: rgb(38, 98, 141);
+    text-decoration: none;
+    margin-top: 0.5rem;
+    transition: 0.2s;
+}
+
+.linkEsqueceuSenha:hover {
+    text-decoration: underline;
+    color: #222;
+}
+
+/* Botão principal de Acesso */
+.btnAcessar {
+    background-color: rgb(38, 98, 141);
+    color: #fff;
+    border: none;
+    padding: 1rem;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 0.5rem;
+    width: 100%;
+}
+
+.btnAcessar:hover {
+    background-color: rgba(38, 98, 141, 0.85); /* Escurece um pouco ao passar o mouse */
+}
+
+/* Área de "Criar Conta" */
+.criarConta {
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 0.95rem;
+    color: #555;
+}
+
+.criarConta a {
+    color: rgb(38, 98, 141);
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+.criarConta a:hover {
+    text-decoration: underline;
+    color: #222;
+}
+
+/* =========================================
+   PÁGINA DE CADASTRO
+   ========================================= */
+
+/* Container semelhante ao do login, mas ajustado para um formulário maior */
+#containerCadastro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh; 
+    background-color: #f4f7f6;
+    padding: 3rem 1rem;
+}
+
+/* O cartão branco do formulário de cadastro */
+.cardCadastro {
+    background-color: #fff;
+    padding: 3rem 2.5rem;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+    width: 100%;
+    max-width: 500px; /* Um pouco mais largo que o login para acomodar os campos confortavelmente */
+}
+
+.cardCadastro h2 {
+    color: rgb(38, 98, 141);
+    font-size: 1.6rem;
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+
+.cardCadastro p {
+    color: #777;
+    font-size: 0.95rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+#formCadastro {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem; /* Espaçamento levemente menor entre os campos para não ficar tão longo */
+}
