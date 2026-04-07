@@ -20,6 +20,9 @@ Projeto de um site institucional/e-commerce para uma loja de velas chamado **Alv
 ```bash
 📦 alvaluz
  ┣ 📜 index.html
+ ┣ 📜 carrinho.html
+ ┣ 📜 login.html
+ ┣ 📜 cadastro.html
  ┣ 📜 style.css
  ┣ 📜 script.js
  ┣ 🖼️ logo.png
@@ -97,6 +100,15 @@ Imagem principal do site:
 
 * Contatos
 * Redes sociais
+* Estrutura expandida em colunas (Logo, Links Úteis, Atendimento, Redes Sociais com ícones interativos)
+
+---
+
+## Novas Páginas Adicionadas
+
+* **Carrinho de Compras (`carrinho.html`)**: Lista de produtos escolhidos, controle de quantidade, remoção de itens e painel lateral de resumo do pedido (subtotal, frete, total).
+* **Login (`login.html`)**: Formulário centralizado em cartão para acesso de usuário (e-mail e senha).
+* **Cadastro (`cadastro.html`)**: Formulário para registro de novos usuários (nome completo, e-mail, senha e confirmação).
 
 ---
 
@@ -217,6 +229,15 @@ aside.ativo {
 
 ---
 
+## Estilos Adicionais (Novas Implementações)
+
+* **Banner Responsivo**: Utilização de `height: 50vh` e `object-fit: cover` para cobrir a área sem distorcer a imagem.
+* **Layout do Carrinho**: Distribuição em `flex: 2` (lista de itens) e `flex: 1` (resumo do pedido).
+* **Formulários (Login/Cadastro)**: Fundo `f4f7f6` com cartões brancos com `box-shadow` suave, inputs responsivos com ícones internos.
+* **Footer**: Fundo `rgb(38, 98, 141)`, fontes claras, ícones com efeitos de `hover` e elevação (`transform: translateY`).
+
+---
+
 # ⚙️ 3. JavaScript (Interatividade)
 
 Arquivo: `script.js`
@@ -298,6 +319,8 @@ botaoFecharAside.addEventListener("click", function () {
 * Rotação de ícone
 * Layout moderno
 * Estrutura pronta para e-commerce
+* **Interface do Carrinho de Compras visualmente completa**
+* **Sistema de Autenticação visual (Telas de Login e Cadastro)**
 
 ---
 
@@ -309,6 +332,8 @@ botaoFecharAside.addEventListener("click", function () {
 | Clique no ❌       | Fecha menu        |
 | Clique em "Velas" | Abre submenu      |
 | Clique novamente  | Fecha submenu     |
+| Clique em 🛒       | Abre página Carrinho |
+| Clique em 👤       | Abre página Login |
 
 ---
 
@@ -318,7 +343,7 @@ botaoFecharAside.addEventListener("click", function () {
 * Carrossel funcional
 * Sistema de busca
 * Backend (produtos reais)
-* Carrinho de compras
+* Carrinho de compras (funcionalidade lógica de adicionar itens)
 
 ---
 
@@ -327,7 +352,7 @@ botaoFecharAside.addEventListener("click", function () {
 * HTML5
 * CSS3
 * JavaScript
-* Flaticon Icons
+* Flaticon Icons (Solid, Regular, Bold e Brands)
 
 ---
 
